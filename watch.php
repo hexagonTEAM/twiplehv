@@ -1,7 +1,7 @@
 <?php
   include "inf.php";
   include "bdd.php";
-  $bddc = mysqli_connect($bdd, $ubdd, $pbdd, $dbname);
+  $bddc = mysqli_connect($bdd, $ubdd, $pbdd, $dbname) or die("database ログイン エラー");
  ?>
 <!DOCTYPE html>
 <html lang="en">

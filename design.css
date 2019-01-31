@@ -1,0 +1,89 @@
+body
+{
+        font-family: "arial";
+        background-color: #e2e2e2;
+}
+header
+{
+	background-color: rgb(97, 0, 136);
+	color: white;
+}
+nav
+{
+    float: top;
+    width: 150px;
+    border-top: 10px solid black;
+    margin-top: 20px;
+}
+a:link, a:visited {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover {
+    color: #bdbdbd;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+		-webkit-transition: 0.5s;
+}
+a {
+    position: relative;
+}
+a span {
+    display: none;
+    position: absolute;
+    color: #fff;
+    background: #000;
+    padding: 5px;
+}
+a:hover span {
+    display: block;
+    text-align: center;
+}
+section
+{
+    margin-left: 40px;
+    margin-right: 40px;
+    border-left: 4px solid teal;
+    margin-top: 20px;
+}
+article
+{
+    margin-left: 20px;
+}
+#infobox {
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+	 	width: 400px;
+    margin-left: 170px;
+}
+
+/* Make the image fit the box */
+#infobox img {
+    width: 100%;
+    border: 1px solid #8a4419;
+    border-style: inset;
+}
+
+#infobox a {
+    color: black;
+}
+
+#infobox::after {
+    content: '';
+    position: absolute;
+    z-index: -1; /* hide shadow behind image */
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    left: 15%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
